@@ -7,7 +7,7 @@ const readFolder = async folder => {
   try {
     const readDir = await readdir(folder, { withFileTypes: true });
     for (const file of readDir) {
-      const pathFile = `${folder}/${file.name}`;
+      const pathFile = path.join(folder, file.name);
       if (file.isFile()) {
         stat(pathFile, (err, stats) => {
           if (err) console.log(err);
