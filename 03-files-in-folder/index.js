@@ -26,9 +26,3 @@ const readFolder = async folder => {
 };
 
 readFolder(pathFolder);
-
-// stat(file,  (err, stats) => {
-
-//     if (err) console.log(err);
-//     else console.log(stats);
-//   });
