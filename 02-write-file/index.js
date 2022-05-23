@@ -19,5 +19,5 @@ stdin.on('data', data => {
 
 process.on('SIGINT', () => process.exit());
 process.on('exit', () => {
-  console.log('Good luck');
+  console.log('\nGood luck');
 });
